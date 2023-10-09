@@ -1,11 +1,15 @@
 <template>
   <div>
-    <Topbar />
-    <Sidebar />
+    <header>
+      <Topbar />
+    </header>
     <div class="container-fluid">
       <div class="row">
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-          <slot />
+        <nav class="col-md-2 bg-light">
+          <Sidebar />
+        </nav>
+        <main class="col-md-10">
+          <router-view></router-view>
         </main>
       </div>
     </div>
