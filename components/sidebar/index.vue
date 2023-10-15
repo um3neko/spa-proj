@@ -1,32 +1,22 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Сайдбар (слева) -->
-      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-        <!-- Ваше содержимое сайдбара -->
-        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" style="width: 125px" alt="Avatar" />
-        <div class="position-sticky">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <router-link to="/profile" class="nav-link">Приход</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/profile" class="nav-link">Группы</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/profile" class="nav-link">Продукты</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/profile" class="nav-link">Продукты</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/profile" class="nav-link">Настройки</router-link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <aside class="sidebar shadow-lg">
+    <div>
+      <img
+        src="https://www.rollingstone.com/wp-content/uploads/2018/06/bladerunner-2-trailer-watch-8bd914b0-744f-43fe-9904-2564e9d7e15c.jpg"
+        class="shadow"
+        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover"
+        alt="Avatar"
+      />
     </div>
-  </div>
+    <div class="row">
+      <navigation-menu />
+    </div>
+  </aside>
 </template>
 
-<script setup lang="ts"></script>
+<style>
+.sidebar {
+  overflow: hidden;
+  height: 100%;
+}
+</style>

@@ -1,12 +1,4 @@
-export default {
-  head: {
-    title: 'SPA',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ]
-  },
-  devtools: { enabled: true },
+export default defineNuxtConfig({
   modules: [
     'nuxt-bootstrap-icons',
     [
@@ -18,5 +10,6 @@ export default {
       }
     ]
   ],
-  css: ['~/assets/styles/main.scss']
-};
+  css: ['~/assets/styles/main.scss'],
+  devtools: { enabled: false }
+});

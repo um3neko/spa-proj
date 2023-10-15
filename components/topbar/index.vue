@@ -1,16 +1,10 @@
 <template>
-  <div>
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
+  <div style="width: 100%">
+    <header class="navbar navbar-expand-lg navbar-light shadow-lg" style="background: #ffffff">
       <div class="container">
         <div class="container">
           <div class="d-flex align-items-center">
-            <img
-              src="/favicon.ico"
-              alt="Изображение"
-              class="mr-2"
-              width="30"
-              height="30"
-            />
+            <img src="/favicon.ico" alt="Изображение" class="mr-2" width="30" height="30" />
             <h3 class="text-success align-middle mb-0 ml-2">INVENTORY</h3>
           </div>
         </div>

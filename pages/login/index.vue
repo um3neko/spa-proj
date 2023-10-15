@@ -47,9 +47,8 @@ const validateEmail = () => {
 };
 
 const login = () => {
-  validateEmail();
+  // validateEmail();
   console.log(formData.value);
-
   nav.go('/profile');
 };
 
