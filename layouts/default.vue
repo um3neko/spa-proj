@@ -6,10 +6,8 @@
         <Sidebar />
       </div>
       <div class="col-md-10 px-0 bg-custom-gray">
-        <main>
-          <div class="scroll-container">
-            <router-view class="m-lg-5"></router-view>
-          </div>
+        <main style="height: 100vh">
+          <router-view class="m-lg-5"></router-view>
         </main>
       </div>
     </div>
@@ -20,10 +18,5 @@
 <style scoped>
 .bg-custom-gray {
   background-color: #f0f3f5;
-}
-.scroll-container {
-  overflow: auto;
-  width: 1200px;
-  height: 100vh;
 }
 </style>

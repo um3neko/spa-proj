@@ -1,22 +1,28 @@
 <template>
   <div>
     <h1>ORDERS</h1>
-    <div>
-      <div class="d-flex flex-column">
-        <div class="scrollable-container custom-scrollbar">
-          <coming-item v-for="index in 12" class="my-3"></coming-item>
-        </div>
+    <div style="display: flex; justify-content: space-between">
+      <div class="scrollable-container custom-scrollbar" :style="{ width: isOpen ? '40%' : '100%' }">
+        <ComingItem v-for="index in 6" class="my-3" @click="handler"></ComingItem>
+      </div>
+      <div v-if="isOpen" class="scrollable-container custom-scrollbar" style="width: 60%">
+        <ComingProducts />
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const isOpen = ref(false);
+const handler = () => {
+  isOpen.value = !isOpen.value;
+};
+</script>
 
 <style>
 .scrollable-container {
   overflow: auto;
-  max-height: 600px;
+  max-height: 930px;
 }
 .custom-scrollbar::-webkit-scrollbar {
   width: 12px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="container full-width-rectangle">
+  <div class="container full-width-rectangle bg-white">
     <div class="row align-content-center" style="height: 100px">
       <div class="col-2">
         <p>Компонент</p>
