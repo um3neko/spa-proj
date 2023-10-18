@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar shadow-lg">
-    <div>
+    <div style="display: flex; justify-content: center">
       <img
         src="https://www.rollingstone.com/wp-content/uploads/2018/06/bladerunner-2-trailer-watch-8bd914b0-744f-43fe-9904-2564e9d7e15c.jpg"
         class="shadow"
